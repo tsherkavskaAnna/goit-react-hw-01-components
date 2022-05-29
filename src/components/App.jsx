@@ -1,10 +1,10 @@
-import Profile from './Profile/Profile';
-import user from '../data/user.json';
+//import Profile from './Profile/Profile';
+//import user from '../data/user.json';
 
 export const App = () => {
   return (
     <div>
-      <Profile
+      {/* <Profile
         name={user.name}
         tag={user.tag}
         location={user.location}
@@ -12,7 +12,7 @@ export const App = () => {
         followers={user.stats.followers}
         views={user.stats.views}
         likes={user.stats.likes}
-      />
+      /> */}
     </div>
   );
 };
