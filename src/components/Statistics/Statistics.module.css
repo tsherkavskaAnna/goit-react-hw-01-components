@@ -14,17 +14,20 @@
 }
 .statList {
   display: flex;
-  justify-content: center;
-  background-color: aquamarine;
+  background-color: rgb(101, 204, 218);
   margin: auto;
+  padding: 0px;
 }
 .statList .item {
-  display: block;
-  width: 60px;
-  height: 60px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc(100% / 5);
   text-align: center;
-  border: 1px solid blue;
 }
+.statList .item:not(:last-child) {
+  border-right: 1px solid grey;
+}
+
 .item .label {
   display: block;
   margin: 0;
@@ -34,5 +37,4 @@
 .item .percentage {
   display: block;
   margin: 0;
-  padding: 0;
 }
